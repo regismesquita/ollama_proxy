@@ -270,9 +270,12 @@ func main() {
 			log.Printf("Outgoing /api/chat payload: %s", string(bodyBytes))
 		}
 
-		// Unmarshal and modify the request payload: strip ":proxy" from model field.
+		// Unmarshal and modify the request payload: strip ":proxy" from model field
+		// and remove unsupported options.
 		var payload map[string]interface{}
 		if err := json.Unmarshal(bodyBytes, &payload); err == nil {
+			// Remove unsupported "options" field.
+			delete(payload, "options")
 			if modelVal, ok := payload["model"].(string); ok {
 				payload["model"] = strings.TrimSuffix(modelVal, ":proxy")
 			}
