@@ -387,7 +387,10 @@ func main() {
 		if *forwardUnknown {
 			forwardToOllama(w, r)
 		} else {
-			http.NotFound(w, r)
+			w.Header().Set("Content-Type", "text/plain")
+			w.WriteHeader(http.StatusOK)
+			w.Write([]byte("Ollama is running"))
+			return
 		}
 	})
 
