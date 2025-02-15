@@ -33,8 +33,8 @@ When running in debug mode, the proxy logs:
 Clone this repository:
 
 ```
-git clone https://github.com/yourusername/ollama-openai-proxy.git
-cd ollama-openai-proxy
+git clone https://github.com/regismesquita/ollama_proxy.git
+cd ollama_proxy
 ```
 
 Build the project:
