@@ -40,7 +40,7 @@ cd ollama-openai-proxy
 Build the project:
 
 ```
-go build -o proxy-server main.go
+go build -o proxy-server ollama_proxy.go
 ```
 
 ## Usage
