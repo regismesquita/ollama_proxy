@@ -48,7 +48,7 @@ go build -o proxy-server ollama_proxy.go
 Run the proxy server with the desired flags:
 
 ```
-./proxy-server --listen=":11434" --target="http://127.0.0.1:4000" --api-key="YOUR_API_KEY" --debug
+./proxy-server --listen=":11434" --target="http://127.0.0.1:4000/v1" --api-key="YOUR_API_KEY" --debug
 ```
 
 ## Command-Line Flags
