@@ -2,7 +2,7 @@
 
 This is a Go-based proxy server that enables applications designed to work with the Ollama API to interact seamlessly with an OpenAI-compatible endpoint. It translates and forwards requests and responses between the two APIs while applying custom transformations to the model names and data formats.
 
-**Note:** This is a pet project I use to forward requests to LiteLLM for use with Kerlig, which doesn’t support custom OpenAI endpoints. As this is a personal project, there might be issues and rough edges. Contributions and feedback are welcome!
+**Note:** This is a pet project I use to forward requests to LiteLLM for use with `Kerlig` and `Enchanted`, which doesn’t support custom OpenAI endpoints. As this is a personal project, there might be issues and rough edges. Contributions and feedback are welcome!
 
 ## Features
 
